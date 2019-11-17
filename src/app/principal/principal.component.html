@@ -1,0 +1,15 @@
+<app-navegacion></app-navegacion>
+<div class="container contenedorEspacio">
+        <div class="card-columns">
+                <div *ngFor="let pokemon of monstruos" class="card">
+                  <p class="card-text idText"><small>Id: {{pokemon.id}}</small></p>
+                        <div class="card-body">
+                          <h3 class="card-title">{{pokemon.name}}</h3>
+                          <hr>
+                        <p>  <img [src]="pokemon.sprites.front_default" class="center"></p>
+                          <hr>
+                          <p class="card-text tipo"><b>Tipo:</b> {{pokemon.types[0].type.name }}</p>
+                          <button (click)='verPokemon(pokemon.id)' class="btn btn-success btn-block" type="button" name="button">Ver más</button>
+                        </div>
+                      </div>
+</div>

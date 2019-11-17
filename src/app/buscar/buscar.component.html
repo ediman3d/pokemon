@@ -1,0 +1,22 @@
+<app-navegacion></app-navegacion>
+<div class="container contenedorEspacio">
+  <div class="card buscar">
+
+    <form class="form-inline">
+          <input #busqueda class="form-control inputbuscar" (keyup)="buscar(busqueda.value)" type="text" placeholder="Escribe el ID o nombre del pokemon" aria-label="Search">
+        </form>
+
+  </div>
+        <div class="card-columns">
+                <div *ngIf="busqueda.value" class="card tarjeta">
+                  <p class="card-text idText"><b>Id:</b> {{pokemon.id}}</p>
+                  <h2 class="card-title">{{pokemon.name}}</h2>
+                  <hr>
+                        <div class="card-body">
+                          <p><img [src]="pokemon.sprites.front_default" class="center"></p>
+                          <hr>
+                          <p class="card-text tipo"><b>Tipo:</b> {{pokemon.types[0].type.name }}</p>
+                          <button (click)='verPokemon(pokemon.id)' class="btn btn-success btn-block" type="button" name="button">Ver más</button>
+                        </div>
+                      </div>
+</div>

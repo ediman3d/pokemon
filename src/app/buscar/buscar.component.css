@@ -1,0 +1,49 @@
+.contenedorEspacio{
+  margin-top: 8%;
+}
+.buscar{
+  margin-top: 2%!important;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color:orange;
+}
+.inputbuscar{
+  margin-left:2%;
+  width: 95%!important;
+}
+
+.botonbuscar{
+  margin-left: 20px;
+  width: 240px;
+  float: right;
+}
+.tarjeta{
+  margin-top: 3%;
+}
+
+.contenedorEspacio{
+  margin-top: 8%;
+}
+
+.card-title{
+  text-align: center;
+  color:blue;
+  text-transform: capitalize;
+  margin-top: 1%;
+}
+.idText{
+  color: green;
+  font-size: 12px;
+  text-align: right!important;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.card-body p{
+  text-align: center;
+}
+.card-body p img{
+  width: 120px;
+}
+.tipo{
+  text-transform: capitalize;
+}

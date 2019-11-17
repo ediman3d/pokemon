@@ -1,0 +1,30 @@
+<app-navegacion></app-navegacion>
+<div class="container contenedorEspacio">
+
+                <div  class="card tarjeta">
+                  <p class="card-text idText"><b>Id:</b> {{pokemon.id}}</p>
+                  <h2 class="card-title"><img [src]="pokemon.sprites.front_default" class="center"> {{pokemon.name}}</h2>
+                  <hr>
+                        <div class="card-body">
+                        <div class="row">
+                          <div class="col-2"></div>
+                          <div class="col-6">
+<h4>Evolución</h4>
+<div class="row">
+  <div *ngFor="let evolucion of cadenaEvolutiva" class="col tipo">
+    <img [src]="imagenEvol.sprites.front_default" class="center"><br> {{evolucion.species.name}}
+  </div>
+</div>
+                    </div>
+                          <div class="col-4">
+                            <p class="card-text tipo"><b>Tipo:</b> {{pokemon.types[0].type.name }}</p><br>
+                          <p class="card-text tipo"><b>Altura:</b> {{pokemon.height }}</p><br>
+                        <p class="card-text tipo"><b>Peso:</b> {{pokemon.weight }}</p><br>
+                      </div>
+                        </div>
+
+                          <hr>
+                          <p class="card-text tipo"><b>Movimientos:</b> {{pokemon.moves[0].move.name }} / {{pokemon.moves[1].move.name }}</p>
+                        </div>
+                      </div>
+</div>

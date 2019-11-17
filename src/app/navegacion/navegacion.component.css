@@ -1,0 +1,22 @@
+.usuariolog{
+  position: relative;
+  text-align: right;
+  float: left;
+/* margin-right: 10px; */
+margin-top: 20px;
+}
+.usuariolog img{
+  width: 60px;
+  float: right;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.usuariolog small{
+  font-weight: bold;
+  color: green;
+  cursor:pointer;
+}
+.lista{
+  list-style: none;
+}

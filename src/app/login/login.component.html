@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="card loginCard">
+      <div class="card-header">
+        Bienvenido entrenador pokemon!
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-6">
+          <img class="img-fluid" src="../assets/logImg.png" alt="">
+        </div>
+        <div class="col-6">
+          <div><img class="img-fluid" src="../assets/logo.png" alt=""></div><br>
+          <form>
+          <div class="form-group">
+            <label for="usuarioemail">Correo electrónico</label>
+            <input #user type="email" class="form-control" id="usuarioemail" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="usuariopass">Contraseña</label>
+            <input type="password" class="form-control" id="usuariopass" placeholder="Password">
+          </div><br>
+          <button class="btn btn-primary btn-block" [routerLink]="['/principal']"  (click)="usuario(user.value)">Ingresar</button><br>
+          <small class="form-text text-muted text-center">¿Aun no eres entrenador? <a [routerLink]="['/registro']" >Registrate</a></small>
+        </form></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
